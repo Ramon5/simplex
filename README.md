@@ -9,7 +9,7 @@ Python >= 3
 
 baixe o projeto:
 
-$ git clone 
+$ git clone git@github.com:Ramon5/simplex.git
 
 crie o ambiente virtual e ative:
 
