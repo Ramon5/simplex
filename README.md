@@ -2,7 +2,7 @@
 
 ### Requisitos
 
-Linux
+Linux \
 Python >= 3
 
 ### Instruções ###
