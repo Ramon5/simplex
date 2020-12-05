@@ -13,7 +13,7 @@ $ git clone git@github.com:Ramon5/simplex.git
 
 crie o ambiente virtual e ative:
 
-$ virtualenv -p python3 .env
+$ virtualenv -p python3 .env \
 $ source .env/bin/activate
 
 Instalando os requisitos:
