@@ -110,11 +110,7 @@ class Simplex:
                 for var in separated_data:
                     if coefficient in var:
                         value = re.findall(r"-?\d+", var)
-                        if value:
-                            values.append(value[0])
-                        else:
-                            values.append(1)
-
+                        values.append(value[0] if value else 1)
                         contains = True
 
                 if not contains:
