@@ -110,7 +110,7 @@ class Simplex:
                 for var in separated_data:
                     if coefficient in var:
                         value = re.findall(r"-?\d+", var)
-                        if len(value) > 0:
+                        if value:
                             values.append(value[0])
                         else:
                             values.append(1)
@@ -157,7 +157,7 @@ class Simplex:
         """ Insere variável de folga na restrição """
         self.fo.append(0)
 
-        if len(self.table) == 0:
+        if not self.table:
             row.append(1)
             self.inserted += 1
             return row
@@ -183,7 +183,7 @@ class Simplex:
         """ Verifica se existe valores negativos na primeira linha da tabela: FO"""
         ocurrence = list(filter(lambda x: x < 0, self.table[0]))
 
-        return False if len(ocurrence) > 0 else True
+        return False if ocurrence else True
 
     def get_entry_column(self):
         """ Define a coluna pivô """
@@ -241,7 +241,7 @@ class Simplex:
 
         line_reference = len(stack) - 1
 
-        while len(stack) > 0:
+        while stack:
 
             row = stack.pop()
 
