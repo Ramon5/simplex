@@ -18,7 +18,7 @@ $ git clone git@github.com:Ramon5/simplex.git
 
 crie o ambiente virtual e ative:
 ```
-$ poetry env use python3.9
+$ poetry env use python3.10
 ```
 
 Instalando os requisitos:
