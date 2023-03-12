@@ -11,21 +11,24 @@ baixe o projeto:
 ```
 $ git clone git@github.com:Ramon5/simplex.git
 ```
+### Instale o poetry
+
+```$ curl -sSL https://install.python-poetry.org | python3 - ```
+
 
 crie o ambiente virtual e ative:
 ```
-$ virtualenv -p python3 .env \
-$ source .env/bin/activate
+$ poetry env use python3.9
 ```
 
 Instalando os requisitos:
 
 ```
-$ pip install -r requirements.txt
+$ poetry install
 ```
 
 ### Executando ###
 
 ```
-$ python3 view.py
+$ make run
 ```

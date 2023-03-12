@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "simplex"
+version = "0.1.0"
+description = ""
+authors = ["Ramon Rodrigues <ramon.srodrigues01@gmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyqt5 = "^5.15.9"
+
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.1.1"
+isort = "^5.12.0"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 94
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
